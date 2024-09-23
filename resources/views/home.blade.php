@@ -14,7 +14,12 @@
                 Hello World.
             </div>
             <div class="col-12">
-                {{ $message }}
+                <!-- modo dinamico -->
+                {{ $title }}
+            </div>
+            <div class="col-12">
+                <!-- visualizzato il messaggio con il metodo compact -->
+              {{ $message }}
             </div>
         </div>
     </div>

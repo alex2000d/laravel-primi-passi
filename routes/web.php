@@ -16,8 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
      $data = [
-        'message' => 'welcome to laravel!'
+        'title' => 'welcome to laravel!'
      ];
-
-    return view('home', $data);
+   //   creo una variabile con il messaggio 
+     $message = "tanti progetti ci aspettano";
+      // utilizzo del compact
+    return view('home', $data, compact("message"));
 });
